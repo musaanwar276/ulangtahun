@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Our Love Story</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(to bottom,#ffdce6,#fff5f7);
+    overflow-x:hidden;
+    color:#444;
+}
+
+/* HEADER */
+
+header{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+    position:relative;
+}
+
+header::before{
+    content:'';
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:url('https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=1200&auto=format&fit=crop') center/cover;
+    opacity:0.35;
+}
+
+.hero{
+    position:relative;
+    z-index:2;
+}
+
+.hero h1{
+    font-size:70px;
+    font-family:'Dancing Script',cursive;
+    color:#ff2d75;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:20px;
+    max-width:700px;
+    margin:auto;
+    color:#444;
+}
+
+/* SECTION */
+
+section{
+    padding:80px 10%;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.title h2{
+    font-size:40px;
+    color:#ff2d75;
+}
+
+.title p{
+    color:#666;
+}
+
+/* GALERI */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+}
+
+.card .text{
+    padding:20px;
+}
+
+.card h3{
+    color:#ff2d75;
+    margin-bottom:10px;
+}
+
+/* LOVE QUOTES */
+
+.quotes{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.quote-box{
+    background:white;
+    padding:30px;
+    border-radius:25px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.08);
+    text-align:center;
+    font-style:italic;
+    transition:0.3s;
+}
+
+.quote-box:hover{
+    transform:scale(1.03);
+}
+
+/* TIMELINE */
+
+.timeline{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.timeline-item{
+    background:white;
+    padding:25px;
+    border-left:8px solid #ff2d75;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+.timeline-item h3{
+    color:#ff2d75;
+    margin-bottom:8px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#ff2d75;
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:50px;
+}
+
+footer h2{
+    font-family:'Dancing Script',cursive;
+    font-size:40px;
+}
+
+/* HEART ANIMATION */
+
+.hearts{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    overflow:hidden;
+    z-index:-1;
+}
+
+.hearts span{
+    position:absolute;
+    bottom:-100px;
+    color:#ff4f8b;
+    animation:animate 10s linear infinite;
+    font-size:25px;
+}
+
+@keyframes animate{
+    0%{
+        transform:translateY(0) rotate(0deg);
+        opacity:1;
+    }
+    100%{
+        transform:translateY(-120vh) rotate(360deg);
+        opacity:0;
+    }
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:50px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+.title h2{
+    font-size:30px;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<div class="hearts">
+    <span style="left:10%; animation-duration:8s;">❤</span>
+    <span style="left:25%; animation-duration:12s;">❤</span>
+    <span style="left:40%; animation-duration:10s;">❤</span>
+    <span style="left:55%; animation-duration:14s;">❤</span>
+    <span style="left:70%; animation-duration:9s;">❤</span>
+    <span style="left:85%; animation-duration:11s;">❤</span>
+</div>
+
+<header>
+    <div class="hero">
+        <h1>Happy birthday</h1>
+        <p>
+           Happy birthday iqnaa, semoga hari - hari mu selalu dipenuhi kebaikan dan keindahan, semoga semesta berpihak padamu, dan setiap langkahmu di mudahkan menuju masa depan yang cerah, teruslah berkembang, teruslah melangkah, dan temukan kebahagiaanmu. jangan lupa untuk menjaga kesehatanmu dan untuk segala yang dibalas dan tak terbalas, semoga yang baik kembali padamu, dan yang buruk tersimpan diruang hati yang paling ikhlas, terimakasih untuk semuanya
+        </p>
+    </div>
+</header>
+
+<section>
+
+    
+
+    <div class="gallery">
+
+        <div class="card">
+            <img src="iqna.jpg">
+            <div class="text">
+                <p>happy birthday, happy birthday yaa, selamat bertambah umur yaa, makasiii banyak karena kamu udah bisa ngelewatin hal-hal berat di dunia ini dan kamu menyelesaikannya dengan sangat-sangat baik. aku sangat bangga sama kamu, i'm so so so proud of u sampe detik ini, kalo kamu lagi butuh seseorang buat jadi tempat cerita segala keluh kesah kamu, aku hadir buat kamu. i will always be here for u. keep in mind that u have wonderful individuals in your life who are always there for u, aku selalu support kamu tentang apapun itu. always remembering that everything is going to be oke and your life is going to be better. khusus buat kamu, semangat terus buat jalanin hari- harinya yaaa, jangn sampe sakit, semoga juga di umur kamu yang sekarangg bisa jadi berkah segalanya yaa, dilancarkan segala urusannya, makinn berkah-berkah pokoknya yaa, mungkin kamu masi punya banyak doa lagi kamu bisa doa sendiri nanti aku bagian aamiinn paling keras buat kamu, happy birthday to an amazing person, terimakasii uda hadir yaa dikehidupan anak laki-laki yang sangat-sangat kesepian ini, semoga semesta selalu menjaga senyum manis mu yaa, kamu adalah bentuk nyata ciptaan Tuhan yang indah untukku, sekali lagi happy birthday untuk kamu.</p>
+            </div>
+        </div>
+
+       
+</section>
+
+
+</body>
+</html>

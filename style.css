@@ -1,0 +1,62 @@
+body{
+    margin:0;
+    height:100vh;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:black;
+    font-family:Arial;
+}
+
+.container{
+    text-align:center;
+    z-index:2;
+}
+
+h1{
+    color:white;
+    font-size:55px;
+    font-family: "Brush Script MT", cursive;
+    text-shadow:
+    0 0 10px white,
+    0 0 20px hotpink,
+    0 0 40px hotpink;
+
+    animation: glow 2s infinite alternate;
+}
+
+button{
+    margin-top:20px;
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    background:hotpink;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    box-shadow:0 0 15px hotpink;
+}
+
+#msg{
+    margin-top:20px;
+    color:white;
+    font-size:20px;
+}
+
+.heart{
+    position:absolute;
+    color:hotpink;
+    animation:fall linear forwards;
+}
+
+@keyframes fall{
+    0%{
+        transform:translateY(-10vh);
+        opacity:1;
+    }
+    100%{
+        transform:translateY(110vh);
+        opacity:0;
+    }
+}
